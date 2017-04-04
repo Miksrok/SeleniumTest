@@ -64,6 +64,7 @@ public class AdminPage {
             }else {
                 text = driver.findElement(By.className("page-title")).getText();
             }
+            System.out.println(text);
             driver.navigate().refresh();
             Thread.sleep(20000);
             System.out.println(isCurrentPage(text, id));

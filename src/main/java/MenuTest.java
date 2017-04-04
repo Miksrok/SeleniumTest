@@ -1,4 +1,3 @@
-
 import pages.AdminPage;
 import pages.LoginPage;
 
@@ -6,7 +5,7 @@ import pages.LoginPage;
 /**
  * Created by Denys Gugushkin on 02.04.2017.
  */
-public class MenuTest extends  Base{
+public class MenuTest extends Base {
 
     public static void main(String[] args) throws InterruptedException {
 
