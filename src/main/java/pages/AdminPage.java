@@ -13,6 +13,7 @@ import java.util.List;
 public class AdminPage {
 
     private WebDriver driver;
+
     private List<String> menuItemsId = Arrays.asList("subtab-AdminParentOrders",
             "subtab-AdminCatalog",
             "subtab-AdminParentCustomer",
@@ -51,7 +52,6 @@ public class AdminPage {
                 driver.findElement(By.id(id)).click();
             }
 
-
             Thread.sleep(20000);
             if (id.equals("subtab-AdminCatalog")){
                 text = driver.findElement(By.className("header-toolbar"))
@@ -64,7 +64,6 @@ public class AdminPage {
             }else {
                 text = driver.findElement(By.className("page-title")).getText();
             }
-            
             System.out.println(text);
             driver.navigate().refresh();
             Thread.sleep(20000);
@@ -87,5 +86,8 @@ public class AdminPage {
                     .getText();
             return text.equals(tmp);
         }
+    }
+    public void driverQuit(){
+        driver.quit();
     }
 }

@@ -13,6 +13,7 @@ public class MenuTest extends Base {
         loginPage.openLoginPage();
         AdminPage adminPage = loginPage.login("webinar.test@gmail.com", "Xcg7299bnSmMuRLp9ITw");
         adminPage.clickMenuItemsAndRefreshPage();
+        adminPage.driverQuit();
 
     }
 

@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public abstract class Base {
 
     public static WebDriver getDriver(){
-        System.setProperty("webdriver.gecko.driver", "D:\\geckodriver.exe");
+        System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriver.exe");
         return new FirefoxDriver();
     }
 
